@@ -1,0 +1,66 @@
+<!doctype html>
+<!--Project 1 MIU Term 1206-->
+<!--Michael Smith Jr.-->
+<!--The Diabetic Blood Sugar Log-->
+
+
+
+<html>
+	<head>
+		
+		<!-- Character Set Meta -->
+		<meta charset="utf-8">
+		
+		<!--Description and Keywords Meta-->
+		<meta name="descrtiption" content="My Diabetic Blood Sugar Log">
+		<meta name="keywords" content="diabetic, blood sugar, html5, Full Sail University">
+
+		<!-- Robot Meta Instructions-->
+		<meta name="robots" content="noindex, nofollow">
+
+		<!--Mobile Viewing Meta-->
+		    <!--Iphone-->
+		    <meta name="viewport" content="user-scalable=no, width=device-width">  
+		    <!--Android-->
+		    <meta name="viewport" content="target-densitydpi=device-dpi">
+		    <!--Older Devices-->
+		    <meta name="HandheldFriendly" content="True">
+		    <!--IE Browsers-->
+		    <meta anme="MobileOptimized" content="320">
+
+		<!--Page Title-->
+		<title>Add Log Item</title>
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	</head>
+	<body>
+		<!--Form Title-->
+		<header><h1>Blood Sugar Log Search Form</h1></header>
+			<nav>
+			
+				<a href='#' id="clear">Clear Stored Data</a>
+				<a href='#' id="displayLog">Display Log</a>
+				<a href='additem.html' id="addNew" style="display:none;">Add New Log</a>
+				<a href="search.html">Search</a>
+				
+			</nav>
+			<form action="#" method="post" id="logEntryForm">
+				<fieldset>
+					<legend>Search Log</legend>
+					<span>* fields are required.</span>
+					<ul id="errors"></ul>
+					<ul id="questions">
+						<li id="select"><label for="treatment">Treatment Method Used</label></li>
+						<li><label for="fname">Search Term: </label><input type="text" id="search" /></li>
+					</ul>
+				</fieldset>
+				<input type="button" value="Search" id="searchBtn" /><br />
+			</form>
+			<div id="results"></div>
+				<script type="text/javascript" src="js/search.js"></script>
+				<script type="text/javascript" src="js/json.js"></script>
+				<script type="text/javascript" src="js/form.js"></script>
+	</body>
+</html>
