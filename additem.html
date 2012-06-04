@@ -1,0 +1,84 @@
+<!doctype html>
+<!--Project 4 Visual Frameworks Term 1205-->
+<!--Michael Smith Jr.-->
+<!--The Diabetic Blood Sugar Log-->
+
+
+
+<html>
+	<head>
+		
+		<!-- Character Set Meta -->
+		<meta charset="utf-8">
+		
+		<!--Description and Keywords Meta-->
+		<meta name="descrtiption" content="My Diabetic Blood Sugar Log">
+		<meta name="keywords" content="diabetic, blood sugar, html5, Full Sail University">
+
+		<!-- Robot Meta Instructions-->
+		<meta name="robots" content="noindex, nofollow">
+
+		<!--Mobile Viewing Meta-->
+		    <!--Iphone-->
+		    <meta name="viewport" content="user-scalable=no, width=device-width">  
+		    <!--Android-->
+		    <meta name="viewport" content="target-densitydpi=device-dpi">
+		    <!--Older Devices-->
+		    <meta name="HandheldFriendly" content="True">
+		    <!--IE Browsers-->
+		    <meta anme="MobileOptimized" content="320">
+
+		<!--Page Title-->
+		<title>Add Log Item</title>
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	</head>
+	<body>
+		<!--Form Title-->
+		<header>
+			<h1>Blood Sugar Log Entry Form</h1>
+			<nav>
+			
+				<a href='#' id="clear">Clear Stored Data</a>
+				<a href='#' id="displayLog">Display Log</a>
+				<a href='additem.html' id="addNew" style="display:none;">Add New Log</a>
+				
+			</nav>
+		</header>
+		<!--Log Entry Form-->
+		<form action="#" method="post" id="logEntryForm">
+			<fieldset>
+				<legend>Log Entry</legend>
+				<span>* fields are required.</span>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li><label for="fname">*First Name:</label><input type="text" id="fname"></li>
+					<li><label for="lname">*Last Name:</label><input type="text" id="lname"></li>
+					<li><label for="date">*Today's Date:</label><input type="date" id="date"></li>
+					<li><label for="time">*Current Time:</label><input type="time" id="currentTime"></li>
+					<li><label for="bsreading">*Blood Sugar Reading:</label><input type="number" min="10" max="400" name="bsreading" id="bsreading"></li>
+					<li><label for="sex">Are you male or female?:</label>
+						<ul id="sex">
+							<li><input type="radio" value="Male" id="male" name="sex"><label for="Male">Male</label></li>
+							<li><input type="radio" value="Female" id="female" name="sex"><label for="Female">Female</label></li>
+						</ul>
+					</li>
+					<li><label for="condition">On a scale of 1 to 10, How are you feeling?:</label><input type="range" min="1" max="10" id="condition"></li>				
+					<li id="select"><label for="treatment">Treatment Method Used</label></li>
+					<li><label for="comments">Any comments or How you feel bad.:</label><textarea id="comments"></textarea></li>
+				</ul>
+				<!--Submit Log and Clear Log buttons-->
+				<input type="submit" value="Submit Log Entry" id="submit">
+				<input type="reset" name="resetbutton" id="resetbutton" value="Clear Form" >
+			</fieldset>
+		</form>
+		<footer>
+			
+
+		</footer>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+	</body>
+</html>
