@@ -29,7 +29,7 @@
 		    <meta anme="MobileOptimized" content="320">
 
 		<!--Page Title-->
-		<title>Add Log Item</title>
+		<title>Search Log Form</title>
 
 		<!-- Link CSS -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -39,27 +39,27 @@
 		<!--Form Title-->
 		<header><h1>Blood Sugar Log Search Form</h1></header>
 			<nav>
-			
+				<a href="index.html">Home</a>
 				<a href='#' id="clear">Clear Stored Data</a>
 				<a href='#' id="displayLog">Display Log</a>
-				<a href='additem.html' id="addNew" style="display:none;">Add New Log</a>
+				<a href='additem.html' id="addNew">Add New Log</a>
 				<a href="search.html">Search</a>
 				
 			</nav>
-			<form action="#" method="post" id="logEntryForm">
+			<form action="#" method="post" id="searchForm">
 				<fieldset>
 					<legend>Search Log</legend>
 					<span>* fields are required.</span>
 					<ul id="errors"></ul>
 					<ul id="questions">
-						<li id="select"><label for="treatment">Treatment Method Used</label></li>
-						<li><label for="fname">Search Term: </label><input type="text" id="search" /></li>
+						<li id="select"><label for="treatment">*Treatment Method Used</label></li>
+						<li><label for="fname">*Search Term: </label><input type="text" id="search" /></li>
 					</ul>
 				</fieldset>
 				<input type="button" value="Search" id="searchBtn" /><br />
 			</form>
 			<div id="results"></div>
-				<script type="text/javascript" src="js/search.js"></script>
+				<!--<script type="text/javascript" src="js/search.js"></script>-->
 				<script type="text/javascript" src="js/json.js"></script>
 				<script type="text/javascript" src="js/form.js"></script>
 	</body>

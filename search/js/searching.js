@@ -13,7 +13,7 @@
 	}
 
 	// Create Select Field element and populate
-	function makeCats() {
+	/*function makeCats() {
 		var formTag = document.getElementsByTagName("form"),
 			selectLi = ge("select"),
 			makeSelect = document.createElement("select");
@@ -26,11 +26,11 @@
 			makeSelect.appendChild(makeOption);
 		}
 		selectLi.appendChild(makeSelect);	
-	}
+	}*/
 	
 var treatmentTypes = ["--Choose A Treatment--", "Pills", "Insulin"];
 
-makeCats();
+//makeCats();
 
 var search = ge("searchBtn");
 search.addEventListener("click", getSearch);
@@ -45,7 +45,7 @@ var getSearch = function(){
 				for(i=0, j=localStorage.length; i<j; i++){
 				var key = localStorage.key(i);
 				var value = localStorage.getItem(key);
-				var obj = Jsaon.parse(value);
+				var obj = Json.parse(value);
 				if(category === obj.logItem[1]){
 					for (n in obj){
 						console.log(obj[n][1])
